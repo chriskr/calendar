@@ -1,0 +1,64 @@
+<!doctype html>
+<title>Calendar</title>
+<style>
+
+</style>
+<script src=libs/dateprototype.js></script>
+<script>
+window.onload = function()
+{
+  var d = new Date();
+  var now = d.getFullYear() + 1;
+  var day = 1;
+  var month = 0;
+  var year = d.getFullYear();
+  var days = [];
+  var l = "";
+  d.setYear(year);
+  d.setMonth(month);
+
+  var week_number = 0;
+  for (; day < 33 && month < 12 && year < now; day++)
+  {
+    d.setDate(day);
+    if (d.getMonth() != month)
+    {
+      month++;
+      if (d.getFullYear() != year)
+      {
+        year++;
+        d.setYear(year);
+        month %= 12;
+      }
+      d.setMonth(month);
+      day = 1;
+      d.setDate(day)
+    }
+    var w_n = d.getWeekNumber();
+    if (w_n != week_number)
+    {
+      if (days.length)
+      {
+        days.unshift(days.length);
+        days.unshift(week_number);
+        l += days.join(", ") + "\n";
+      }
+      week_number = w_n;
+      days = [];
+    }
+    days.push(d.toGMTString());
+    // l += d.getWeekNumber();
+    // l += " " + d.toString() + "\n";
+
+  }
+
+  if (days.length)
+  {
+    days.unshift(days.length);
+    days.unshift(week_number);
+    l += days.join(", ");
+  }
+  document.querySelector("pre").textContent = l;
+}
+</script>
+<pre></pre>
