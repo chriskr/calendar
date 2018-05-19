@@ -1,5 +1,5 @@
 <!doctype html>
-<title>calendar with <%= htmlWebpackPlugin.options.options.lib %></title>
+<title>calendar with uldu</title>
 <meta charset=utf-8>
 <link rel=icon href=./img/favicon.png>
 <link rel=stylesheet
@@ -7,19 +7,8 @@
 <link rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
 <link rel=stylesheet href=./css/calendar.css>
-
 <h2>Calendar</h2>
 <h5><a href="https://www.npmjs.com/package/uldu">empowered by uldu</a></h5>
 <div id=root></div>
 <h5><a href="https://github.com/chriskr/calendar">github repo</a></h5>
-
-
-<script> window.__supportsNewJS__ = false; </script>
-<script src="<%= htmlWebpackPlugin.files.js %>"></script>
-<script>
-window.addEventListener('load', function() {
-  if (window.__supportsNewJS__ === false) {
-    window.location.href = './index-es2015.html';
-  }
-});
-</script>
+<script src="bundle-es2015.js"></script>

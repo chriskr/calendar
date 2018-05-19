@@ -1,6 +1,4 @@
-'use strict';
-
-class Holidays {
+class LocalHolidays {
   /**
    * Takes a list of tuples, short date and name of a holiday. The year yyyy is
    * a place holder for any year.
@@ -12,12 +10,13 @@ class Holidays {
    * ['25.04.2011', 'Easter Monday'],
    * ...
    * ]
+   * @param {Array} holidays - A list of short date and name tuples.
    *
    */
   constructor(holidays) {
     this.holidays_ = new Map(holidays.map(([date, name]) => {
       const [day, month, year] =
-          date.split('.').map(i => i === 'yyyy' ? 0 : Number.parseInt(i));
+          date.split('.').map(i => i === 'yyyy' ? 0 : Number.parseInt(i, 10));
       return [this.toKey_(year, month - 1, day), name];
     }));
   }
@@ -36,6 +35,9 @@ class Holidays {
    *   [17, 'Constitution Day'],
    *   [25, 'Ascension Day']
    * ]
+   * @param {number} year - The year.
+   * @param {number} month - The month.
+   * @return {Array} List of the holidays tuples with short date and name.
    *
    */
   getHolidays(year, month) {
@@ -57,3 +59,5 @@ class Holidays {
     return [key >> 9, (key >> 5) & 0xf, key & 0x1f];
   }
 }
+
+export default LocalHolidays;

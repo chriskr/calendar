@@ -1,6 +1,4 @@
-window.localizedHolidays || (window.localizedHolidays = {});
-
-localizedHolidays.norway = [
+const localHolidaysNorway = [
 
   ['01.01.yyyy', 'New Year\'s Day'],
   ['01.05.yyyy', 'Labor Day'],
@@ -69,3 +67,5 @@ localizedHolidays.norway = [
   ['01.06.2020', 'Pentecost Monday'],
 
 ];
+
+export default localHolidaysNorway;
