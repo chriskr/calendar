@@ -1,5 +1,4 @@
 const localHolidaysNorway = [
-
   ['01.01.yyyy', 'New Year\'s Day'],
   ['01.05.yyyy', 'Labor Day'],
   ['17.05.yyyy', 'Constitution Day'],
@@ -66,6 +65,23 @@ const localHolidaysNorway = [
   ['21.05.2020', 'Ascension Day'],
   ['01.06.2020', 'Pentecost Monday'],
 
+  ['01.04.2021', 'Maundy Thursday'],
+  ['02.04.2021', 'Good Friday'],
+  ['05.04.2021', 'Easter Monday'],
+  ['13.05.2021', 'Ascension Day'],
+  ['24.05.2021', 'Pentecost Monday'],
+
+  ['14.04.2022', 'Maundy Thursday'],
+  ['15.04.2022', 'Good Friday'],
+  ['18.04.2022', 'Easter Monday'],
+  ['26.05.2022', 'Ascension Day'],
+  ['06.06.2022', 'Pentecost Monday'],
+
+  ['06.04.2023', 'Maundy Thursday'],
+  ['07.04.2023', 'Good Friday'],
+  ['10.04.2023', 'Easter Monday'],
+  ['18.05.2023', 'Ascension Day'],
+  ['29.05.2023', 'Pentecost Monday'],
 ];
 
 export default localHolidaysNorway;
