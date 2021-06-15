@@ -139,17 +139,20 @@ Calendar.Templates = class {
     const holidaysList = this.holidays(year, month, holidays);
 
     return [
-      'table',
+      'div',
       [
-        'caption',
-        ['span', { class: 'month-name' }, MONTH_NAMES[month]],
-        ['span', { class: 'year-number' }, String(year)],
+        'table',
+        [
+          'caption',
+          ['span', { class: 'month-name' }, MONTH_NAMES[month]],
+          ['span', { class: 'year-number' }, String(year)],
+        ],
+        ['thead', ['tr', ['th', 'Week'], ...weekLabels]],
+        ['tbody', ...weekRows],
+        holidaysList.length === 0
+          ? []
+          : ['tfoot', ['tr', ['td', { colspan: '8' }, holidaysList]]],
       ],
-      ['thead', ['tr', ['th', 'Week'], ...weekLabels]],
-      ['tbody', ...weekRows],
-      holidaysList.length === 0
-        ? []
-        : ['tfoot', ['tr', ['td', { colspan: '8' }, holidaysList]]],
     ];
   }
 
