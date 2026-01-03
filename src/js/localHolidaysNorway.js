@@ -94,6 +94,37 @@ const localHolidaysNorway = [
   ['21.04.2025', 'Easter Monday'],
   ['29.05.2025', 'Ascension Day'],
   ['09.06.2025', 'Pentecost Monday'],
+
+  ['02.04.2026', 'Maundy Thursday'],
+  ['03.04.2026', 'Good Friday'],
+  ['06.04.2026', 'Easter Monday'],
+  ['14.05.2026', 'Ascension Day'],
+  ['25.05.2026', 'Pentecost Monday'],
+
+  ['25.03.2027', 'Maundy Thursday'],
+  ['26.03.2027', 'Good Friday'],
+  ['29.03.2027', 'Easter Monday'],
+  ['06.05.2027', 'Ascension Day'],
+  ['17.05.2027', 'Pentecost Monday'],
+
+  ['13.04.2028', 'Maundy Thursday'],
+  ['14.04.2028', 'Good Friday'],
+  ['17.04.2028', 'Easter Monday'],
+  ['25.05.2028', 'Ascension Day'],
+  ['05.06.2028', 'Pentecost Monday'],
+
+  ['29.03.2029', 'Maundy Thursday'],
+  ['30.03.2029', 'Good Friday'],
+  ['02.04.2029', 'Easter Monday'],
+  ['10.05.2029', 'Ascension Day'],
+  ['21.05.2029', 'Pentecost Monday'],
+
+  ['18.04.2030', 'Maundy Thursday'],
+  ['19.04.2030', 'Good Friday'],
+  ['22.04.2030', 'Easter Monday'],
+  ['30.05.2030', 'Ascension Day'],
+  ['10.06.2030', 'Pentecost Monday'],
+
 ];
 
 export default localHolidaysNorway;
