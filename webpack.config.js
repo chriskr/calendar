@@ -40,6 +40,11 @@ module.exports = [
             from: "src/css/*.css",
             to: "css/[name].css",
           },
+          {
+            // web app manifest and icons, next to index.html
+            from: "src/app/*",
+            to: "[name][ext]",
+          },
         ],
       }),
     ],

@@ -1,0 +1,17 @@
+{
+  "name": "Calendar",
+  "short_name": "Calendar",
+  "description": "Year calendar with week numbers and Norwegian holidays",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#4a0a7a",
+  "theme_color": "#4a0a7a",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
