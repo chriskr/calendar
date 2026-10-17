@@ -86,3 +86,30 @@ export function getWeeksOfMonth(year, month, startWithMonday = true) {
 
   return weeks;
 }
+
+/**
+ * Easter Sunday in the Gregorian calendar (Gauss' Easter algorithm in the
+ * "anonymous Gregorian" form by Meeus, Jones and Butcher).
+ *
+ * E.g. getEasterSunday(2026) returns the date for April 5, 2026.
+ *
+ * @param {number} year - The year.
+ * @return {Date} The date of Easter Sunday.
+ */
+export function getEasterSunday(year) {
+  const a = year % 19;
+  const b = Math.floor(year / 100);
+  const c = year % 100;
+  const d = Math.floor(b / 4);
+  const e = b % 4;
+  const f = Math.floor((b + 8) / 25);
+  const g = Math.floor((b - f + 1) / 3);
+  const h = (19 * a + b - d - g + 15) % 30;
+  const i = Math.floor(c / 4);
+  const k = c % 4;
+  const l = (32 + 2 * e + 2 * i - h - k) % 7;
+  const m = Math.floor((a + 11 * h + 22 * l) / 451);
+  const n = h + l - 7 * m + 114;
+  // n / 31 is the month (3 = March, 4 = April), n % 31 + 1 the day.
+  return new Date(year, Math.floor(n / 31) - 1, (n % 31) + 1);
+}

@@ -5,126 +5,13 @@ const localHolidaysNorway = [
   ['25.12.yyyy', 'Christmas Day'],
   ['26.12.yyyy', 'Second Day of Christmas'],
 
-  ['21.04.2011', 'Maundy Thursday'],
-  ['22.04.2011', 'Good Friday'],
-  ['25.04.2011', 'Easter Monday'],
-  ['02.06.2011', 'Ascension Day'],
-  ['14.06.2011', 'Pentecost Monday'],
-
-  ['05.04.2012', 'Maundy Thursday'],
-  ['06.04.2012', 'Good Friday'],
-  ['09.04.2012', 'Easter Monday'],
-  ['17.05.2012', 'Ascension Day'],
-  ['28.05.2012', 'Pentecost Monday'],
-
-  ['28.03.2013', 'Maundy Thursday'],
-  ['29.03.2013', 'Good Friday'],
-  ['01.04.2013', 'Easter Monday'],
-  ['09.05.2013', 'Ascension Day'],
-  ['20.05.2013', 'Pentecost Monday'],
-
-  ['17.04.2014', 'Maundy Thursday'],
-  ['18.04.2014', 'Good Friday'],
-  ['21.04.2014', 'Easter Monday'],
-  ['29.05.2014', 'Ascension Day'],
-  ['09.06.2014', 'Pentecost Monday'],
-
-  ['02.04.2015', 'Maundy Thursday'],
-  ['03.04.2015', 'Good Friday'],
-  ['06.04.2015', 'Easter Monday'],
-  ['14.05.2015', 'Ascension Day'],
-  ['25.05.2015', 'Pentecost Monday'],
-
-  ['24.03.2016', 'Maundy Thursday'],
-  ['25.03.2016', 'Good Friday'],
-  ['28.03.2016', 'Easter Monday'],
-  ['05.05.2016', 'Ascension Day'],
-  ['16.05.2016', 'Pentecost Monday'],
-
-  ['13.04.2017', 'Maundy Thursday'],
-  ['14.04.2017', 'Good Friday'],
-  ['17.04.2017', 'Easter Monday'],
-  ['25.05.2017', 'Ascension Day'],
-  ['05.06.2017', 'Pentecost Monday'],
-
-  ['29.03.2018', 'Maundy Thursday'],
-  ['30.03.2018', 'Good Friday'],
-  ['02.04.2018', 'Easter Monday'],
-  ['10.05.2018', 'Ascension Day'],
-  ['21.05.2018', 'Pentecost Monday'],
-
-  ['18.04.2019', 'Maundy Thursday'],
-  ['19.04.2019', 'Good Friday'],
-  ['22.04.2019', 'Easter Monday'],
-  ['30.05.2019', 'Ascension Day'],
-  ['10.06.2019', 'Pentecost Monday'],
-
-  ['09.04.2020', 'Maundy Thursday'],
-  ['10.04.2020', 'Good Friday'],
-  ['13.04.2020', 'Easter Monday'],
-  ['21.05.2020', 'Ascension Day'],
-  ['01.06.2020', 'Pentecost Monday'],
-
-  ['01.04.2021', 'Maundy Thursday'],
-  ['02.04.2021', 'Good Friday'],
-  ['05.04.2021', 'Easter Monday'],
-  ['13.05.2021', 'Ascension Day'],
-  ['24.05.2021', 'Pentecost Monday'],
-
-  ['14.04.2022', 'Maundy Thursday'],
-  ['15.04.2022', 'Good Friday'],
-  ['18.04.2022', 'Easter Monday'],
-  ['26.05.2022', 'Ascension Day'],
-  ['06.06.2022', 'Pentecost Monday'],
-
-  ['06.04.2023', 'Maundy Thursday'],
-  ['07.04.2023', 'Good Friday'],
-  ['10.04.2023', 'Easter Monday'],
-  ['18.05.2023', 'Ascension Day'],
-  ['29.05.2023', 'Pentecost Monday'],
-
-  ['28.03.2024', 'Maundy Thursday'],
-  ['29.03.2024', 'Good Friday'],
-  ['01.04.2024', 'Easter Monday'],
-  ['09.05.2024', 'Ascension Day'],
-  ['20.05.2024', 'Pentecost Monday'],
-
-  ['17.04.2025', 'Maundy Thursday'],
-  ['18.04.2025', 'Good Friday'],
-  ['21.04.2025', 'Easter Monday'],
-  ['29.05.2025', 'Ascension Day'],
-  ['09.06.2025', 'Pentecost Monday'],
-
-  ['02.04.2026', 'Maundy Thursday'],
-  ['03.04.2026', 'Good Friday'],
-  ['06.04.2026', 'Easter Monday'],
-  ['14.05.2026', 'Ascension Day'],
-  ['25.05.2026', 'Pentecost Monday'],
-
-  ['25.03.2027', 'Maundy Thursday'],
-  ['26.03.2027', 'Good Friday'],
-  ['29.03.2027', 'Easter Monday'],
-  ['06.05.2027', 'Ascension Day'],
-  ['17.05.2027', 'Pentecost Monday'],
-
-  ['13.04.2028', 'Maundy Thursday'],
-  ['14.04.2028', 'Good Friday'],
-  ['17.04.2028', 'Easter Monday'],
-  ['25.05.2028', 'Ascension Day'],
-  ['05.06.2028', 'Pentecost Monday'],
-
-  ['29.03.2029', 'Maundy Thursday'],
-  ['30.03.2029', 'Good Friday'],
-  ['02.04.2029', 'Easter Monday'],
-  ['10.05.2029', 'Ascension Day'],
-  ['21.05.2029', 'Pentecost Monday'],
-
-  ['18.04.2030', 'Maundy Thursday'],
-  ['19.04.2030', 'Good Friday'],
-  ['22.04.2030', 'Easter Monday'],
-  ['30.05.2030', 'Ascension Day'],
-  ['10.06.2030', 'Pentecost Monday'],
-
+  // Relative to Easter Sunday. Easter Sunday and Pentecost Sunday are
+  // holidays too, but always on a Sunday anyway.
+  ['easter-3', 'Maundy Thursday'],
+  ['easter-2', 'Good Friday'],
+  ['easter+1', 'Easter Monday'],
+  ['easter+39', 'Ascension Day'],
+  ['easter+50', 'Pentecost Monday'],
 ];
 
 export default localHolidaysNorway;
