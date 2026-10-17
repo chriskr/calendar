@@ -165,3 +165,16 @@ td:first-child {
   width: 100%;
 }
 
+
+/* Phones (and narrow windows): the dimmed column would leave only thin
+   strips of the bright gradient, so dim the whole view instead. */
+@media (max-width: 620px) {
+  html {
+    background-image: linear-gradient(hsla(0, 0%, 0%, .3), hsla(0, 0%, 0%, .3)),
+      url(../img/bg.svg);
+  }
+
+  body {
+    background-color: transparent;
+  }
+}
