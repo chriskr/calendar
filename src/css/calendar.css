@@ -176,5 +176,11 @@ td:first-child {
 
   body {
     background-color: transparent;
+    font-size: 12px;
+    width: auto;
+  }
+
+  table {
+    margin: 5px 12px;
   }
 }
