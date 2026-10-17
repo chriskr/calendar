@@ -2,7 +2,7 @@
   "name": "Calendar",
   "short_name": "Calendar",
   "description": "Year calendar with week numbers and Norwegian holidays",
-  "id": "./",
+  "id": "/calendar/build/",
   "start_url": "./",
   "scope": "./",
   "display": "fullscreen",
